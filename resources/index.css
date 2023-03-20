@@ -1,0 +1,58 @@
+body {
+    background-color: #070232;
+    font-family: 'DM Sans', sans-serif;
+    white-space: nowrap;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    width: 650px;
+    margin: auto;
+    top: 0px;
+    left: auto;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+
+.programme {
+    box-sizing: border-box;
+    display: inline-block;
+    border-left: 1px solid #f76e04;
+    margin: 10px;
+    text-align: left;
+    padding: 5px 5px 5px 20px;
+    vertical-align: middle;
+}
+
+.programme1 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+p {
+    color: white;
+}
+
+.rond {
+    background-color: #f76e04;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 440px;
+    z-index: -1;
+}
