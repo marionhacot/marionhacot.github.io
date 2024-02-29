@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Meta-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Styles-->
     <link href="Design-System.css" type="text/css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--Fonts-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <title>My Design System</title>
   </head>
+
   <body>
-    <h1>My Design System</h1>
+    <h1 class="page-title">My Design System</h1>
 
     <div class="box">
       <h2>Colors</h2>
 
       <div class="inline">
         <div class="element color-1">
-          <p>Fuchsia</p>
-          <p>#e508a8</p>
+          <p>Sunflower</p>
+          <p>#ffdd00</p>
         </div>
-        <div class="element function">Use for header and projects boxes</div>
+        <div class="element function">
+          Use for header, nav and projects boxes
+        </div>
+      </div>
+
+      <div class="inline">
+        <div class="element color-5">
+          <p>Tulip</p>
+          <p>#830051</p>
+        </div>
+        <div class="element function">Use for accent colors</div>
       </div>
 
       <div class="inline">
@@ -58,31 +76,25 @@
       <h2>Fonts</h2>
       <div class="inline">
         <div class="element">
-          <p>Default: Roboto</p>
+          <p>Text: Merriweather</p>
         </div>
         <div class="element function">
           <p>regular: Hello there, here is my projects portfolio</p>
-          <p class="roboto-bold">
+          <p class="merriweather-bold">
             bold: Hello there, here is my projects portfolio
-          </p>
-          <p class="roboto-light">
-            light: Hello there, here is my projects portfolio
           </p>
         </div>
       </div>
       <div class="inline no-border">
         <div class="element font-2">
-          <p>Fall-back: Sans-serif</p>
+          <p>Headings: Roboto</p>
         </div>
         <div class="element function">
-          <p class="font-2 sans-serif-regular">
+          <p class="roboto-regular">
             regular: Hello there, here is my projects portfolio
           </p>
-          <p class="font-2 sans-serif-bold">
+          <p class="roboto-bold">
             bold: Hello there, here is my projects portfolio
-          </p>
-          <p class="font-2 sans-serif-light">
-            light: Hello there, here is my projects portfolio
           </p>
         </div>
       </div>

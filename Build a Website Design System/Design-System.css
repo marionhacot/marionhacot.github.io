@@ -1,25 +1,28 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: normal;
+}
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
 }
 h1 {
   text-transform: uppercase;
   font-size: 30px;
 }
+.page-title {
+  margin: 0 10px;
+}
 .box {
   border-top: 2px solid black;
   width: 100%;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 h2 {
   text-transform: uppercase;
   font-size: 20px;
-  margin-top: 5px;
 }
 h3 {
   font-size: 18px;
@@ -43,8 +46,8 @@ p {
   text-align: left;
 }
 .color-1 {
-  background-color: #e508a8;
-  color: white;
+  background-color: #ffdd00;
+  color: black;
 }
 .color-2 {
   background-image: url(../resources/images/SparkleYourLife.png);
@@ -60,33 +63,30 @@ p {
   background-color: white;
   border: 0.5px solid black;
 }
+.color-5 {
+  background-color: #830051;
+  color: white;
+}
 .no-border {
   border: none;
+}
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .roboto-bold {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.font-2 {
-  font-family: sans-serif;
-}
-.sans-serif-regular {
-  font-weight: normal;
-}
-.sans-serif-bold {
-  font-weight: bold;
-}
-.sans-serif-light {
-  font-weight: lighter;
-}
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 a:hover {
