@@ -15,10 +15,6 @@
     />
     <!--Fonts-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
@@ -26,7 +22,11 @@
   </head>
   <header>
     <p class="left">My Portfolio</p>
-    <p class="right">Contact</p>
+    <nav class="right">
+      <a href="#projects">My projects</a>
+      <a href="#next">Next projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <body>
@@ -37,44 +37,40 @@
       </ul>
     </div>
     <div class="presentation">
-      <div>
-        <h1>My Portfolio</h1>
-        <p>
-          Hello and welcome to my portfolio's page!<br />
-          My name is Marion, I am currently training as a Frontend Engineer with
-          Codecademy to change my career from being a French translator to
-          becoming a Web Developer!
-        </p>
+      <div class="presentation-text">
+        <h1>Marion Hacot</h1>
+        <p>Hello and welcome to my portfolio's page!</p>
       </div>
       <div class="picture">
         <img src="./resources/images/Moi_carre.png" alt="Picture of Marion" />
       </div>
     </div>
-    <div class="projects">
+
+    <div id="projects">
       <h2 class="projects-title">My Projects</h2>
       <p>
-        Here, you'll find the links to a selection of web pages I created during
-        my training journey, either from the Codecademy course or for personal
-        purposes.
+        <strong>
+          Click on each box to access a selection of the web pages I created to
+          practice my skills.</strong
+        >
       </p>
       <div class="project">
         <div class="project-box">
           <a href="./Build a Website Design System/Design-System.html">
-            <div class="project-name">My Website's Design System</div>
-            <div class="project-content">
-              This Codecademy project was about building my own basic design
-              system.
-            </div></a
+            <div class="project-name">Style Sheet</div>
+            <div class="project-content">My own basic design system.</div></a
           >
         </div>
 
         <div class="project-box">
-          <div class="project-name">Project 2</div>
-          <div class="project-content">
-            This is a description of and link to the project.
-          </div>
+          <a href="./Business site/index.html">
+            <div class="project-name">Flexbox Exercise</div>
+            <div class="project-content">
+              Fictive company's home page with Flexbox.
+            </div></a
+          >
         </div>
-
+        <!-- 
         <div class="project-box">
           <div class="project-name">Project 3</div>
           <div class="project-content">
@@ -88,7 +84,24 @@
             This is a description of and link to the project.
           </div>
         </div>
+         -->
       </div>
     </div>
+    <div class="about-me">
+      <h2 id="next">What I am working on next</h2>
+      <p>JavaScript & React</p>
+    </div>
+    <footer id="contact">
+      <div class="contact-text">Contact:</div>
+      <div class="addresses">
+        <a
+          href="https://www.linkedin.com/in/marion-hacot-a2782656/?locale=en_US"
+          >LinkedIn</a
+        >
+        <a href="https://www.instagram.com/ma.x.ha?igsh=azZhdjdrMTBiZ3Js"
+          >Instagram</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
