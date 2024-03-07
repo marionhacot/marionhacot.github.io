@@ -50,28 +50,29 @@ p {
   padding-left: 20px;
   text-align: left;
 }
-.color-5 {
+.color-1 {
+  background-color: #830051;
+  color: white;
+}
+.color-2 {
   background-color: #ffdd00;
   color: black;
 }
-.color-2 {
+.color-3 {
   background-image: url(../resources/images/SparkleYourLife.png);
   background-size: 500px;
   color: black;
   border: 0.5px solid black;
 }
-.color-3 {
+.color-4 {
   background-color: black;
   color: white;
 }
-.color-4 {
+.color-5 {
   background-color: white;
   border: 0.5px solid black;
 }
-.color-1 {
-  background-color: #830051;
-  color: white;
-}
+
 .no-border {
   border: none;
 }
