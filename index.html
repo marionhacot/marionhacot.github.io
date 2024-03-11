@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Styles-->
+    <script src="https://kit.fontawesome.com/5a2c7770cf.js" crossorigin="anonymous"></script>
     <link href="./resources/index.css" type="text/css" rel="stylesheet" />
     <link
       href="./Build_a_Website_Design_System/Design-System.css"
@@ -21,10 +22,11 @@
     <title>Marion's Portfolio</title>
   </head>
   <header>
-    <p class="left">My Portfolio</p>
-    <nav class="right">
+    <p class="header-left">My Portfolio</p>
+    <nav class="header-right">
       <a href="#projects">My projects</a>
       <a href="#next">Next projects</a>
+      <a href="#about">About me</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -39,10 +41,16 @@
     <div class="presentation">
       <div class="presentation-text">
         <h1>Marion Hacot</h1>
+        <p>
+          Student on Codecademy's <span>Frontend Engineer Career Path.</span>
+        </p>
         <p>Hello and welcome to my portfolio's page!</p>
       </div>
       <div class="picture">
-        <img src="./resources/images/Moi_carre.png" alt="Picture of Marion" />
+        <img
+          src="./resources/images/me_new_squared.jpg"
+          alt="Picture of Marion"
+        />
       </div>
     </div>
 
@@ -55,14 +63,14 @@
         >
       </p>
       <div class="project">
-        <div class="project-box">
+        <div class="project-box left">
           <a href="./Build_a_Website_Design_System/Design-System.html">
             <div class="project-name">Style Sheet</div>
             <div class="project-content">My own basic design system.</div></a
           >
         </div>
 
-        <div class="project-box">
+        <div class="project-box right">
           <a href="./Business_site/index.html">
             <div class="project-name">Flexbox Exercise</div>
             <div class="project-content">
@@ -71,14 +79,14 @@
           >
         </div>
         <!-- 
-        <div class="project-box">
+        <div class="project-box left">
           <div class="project-name">Project 3</div>
           <div class="project-content">
             This is a description of and link to the project.
           </div>
         </div>
 
-        <div class="project-box">
+        <div class="project-box right">
           <div class="project-name">Project 4</div>
           <div class="project-content">
             This is a description of and link to the project.
@@ -87,19 +95,31 @@
          -->
       </div>
     </div>
-    <div class="about-me">
+    <div id="about">
+      <h2>About Me</h2>
+      <p>
+        After working 12 years as an English/German to French technical
+        translator in diverse businesses, I am currently retraining as a
+        Frontend Engineer with Codecademy. Web Development came to me as I was
+        seeking to learn new, technical skills, while also looking for a career
+        which would allow me to be more creative. After having learned HTML and
+        CSS, I am now focusing on JavaScript and looking forward to studying the
+        modules on React!
+      </p>
       <h2 id="next">What I am working on next</h2>
       <p>JavaScript & React</p>
     </div>
     <footer id="contact">
-      <div class="contact-text">Contact:</div>
-      <div class="addresses">
+      <button class="email-me"><a href=mailto:"ma.hacot@gmail.com">Contact me</a></button>
+      <div class="links">
+        Or find me on:
         <a
           href="https://www.linkedin.com/in/marion-hacot-a2782656/?locale=en_US"
-          >LinkedIn</a
+          ><i class="fa-brands fa-linkedin fa-lg"></i></a
         >
+        <a href="https://github.com/marionhacot"><i class="fa-brands fa-github fa-lg"></i></a>
         <a href="https://www.instagram.com/ma.x.ha?igsh=azZhdjdrMTBiZ3Js"
-          >Instagram</a
+          ><i class="fa-brands fa-instagram fa-lg"></i></a
         >
       </div>
     </footer>
