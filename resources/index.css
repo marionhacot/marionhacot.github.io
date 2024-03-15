@@ -37,7 +37,9 @@ header {
 
 body {
   color: black;
-  background-color: #830051;
+  /*background-color: #830051;*/
+  background-image: url(./images/SparkleYourLife.png);
+  color: black;
 }
 
 .breadcrumb {
@@ -62,11 +64,12 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   position: relative;
   top: 30px;
   margin: 80px 20px;
   color: #fff;
+  background-image: url(./images/SparkleYourLife.png);
+  color: black;
   /*border: 1px solid white;*/
 }
 .presentation-text {
@@ -77,6 +80,11 @@ body {
 .presentation-text h1 {
   padding: 20px 0;
 }
+
+.presentation-text a {
+  text-decoration: underline;
+}
+
 .picture {
   width: 50%;
   display: flex;
@@ -100,8 +108,9 @@ body {
   padding: 50px 10px;
   text-align: center;
   /*background-color: #ffdd00;*/
-  background-image: url(./images/SparkleYourLife.png);
-  color: black;
+  /*background-image: url(./images/SparkleYourLife.png);*/
+  background-color: #830051;
+  color: white;
 }
 
 .projects-title {
@@ -126,6 +135,7 @@ body {
   margin: 20px;
   padding: 5px;
   font-style: normal;
+  border: 1px solid white;
 }
 .project-box a {
   color: white;
@@ -150,7 +160,7 @@ body {
   background-color: white;
   color: black;
   padding: 50px 50px;
-  border-top: 1px solid black;
+  /*border-top: 1px solid black;*/
 }
 
 #about p {
@@ -194,35 +204,15 @@ button:hover {
 .links {
   padding: 0 20px;
 }
-/* CSS Animations */
 
-/*
-.project-box.left {
-  animation-name: arrivesLeft;
-  animation-duration: 5s;
-  animation-fill-mode: backwards;
-}
-
-.project-box.right {
-  animation-name: arrivesRight;
-  animation-duration: 5s;
-}
-
-@keyframes arrivesLeft {
-  0% {
-    margin-right: 100%;
+/* Media queries */
+@media only screen and (max-width: 530px) {
+  .picture img {
+    height: 100px;
+    width: auto;
   }
-  100% {
-    margin-right: 0%;
+  #about p {
+    width: 70%;
   }
+  /*add to change nav items into symbols*/
 }
-
-@keyframes arrivesRight {
-  from {
-    margin-left: 100%;
-  }
-  to {
-    margin-left: 20px;
-  }
-}
-*/
