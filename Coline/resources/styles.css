@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 60px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: rgb(172, 170, 170);
+  text-align: center;
+  font-family: "Syne", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+  background-color: rgb(14, 14, 14);
+}
+
+header .big-screen {
+  display: none;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(172, 170, 170);
+  padding: 10px;
+}
+
+header a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Off-screen menu */
+.small-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hamburger */
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(172, 170, 170);
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+/* Mobile nav */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: rgb(14, 14, 14);
+  padding-top: 120px;
+  transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: rgb(172, 170, 170);
+  margin: 0 auto 16px;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  padding: 0.75rem 1rem;
+}
+
+/* Grid */
+.grid {
+  position: relative;
+  top: 50px;
+  display: grid;
+  column-gap: 2rem;
+  grid-template-rows: 700px auto 50px auto auto 200px 50px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "about-me"
+    "contact"
+    "songs"
+    "socials"
+    "dates"
+    "footer";
+  background-color: rgb(14, 14, 14);
+}
+
+.hero {
+  grid-area: hero;
+  background-image: url(./images/Coline_16x9-crédits.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  text-transform: capitalize;
+  padding: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#about-me {
+  grid-area: about-me;
+  padding: 0 20px;
+}
+
+#about-me p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.citation {
+  font-style: italic;
+  font-size: 1.75rem;
+  padding: 20px 0px;
+  color: white;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+#contact {
+  text-align: center;
+  grid-area: contact;
+  padding: 50px;
+}
+
+button.email {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(172, 170, 170);
+}
+
+button.email a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+button.email a:hover {
+  color: white;
+}
+
+button.email:active {
+  background-color: black;
+}
+
+#songs {
+  grid-area: songs;
+  padding: 20px 0;
+}
+
+.list-songs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.list-songs iframe {
+  padding: 20px;
+  border: none;
+  margin: 0;
+}
+
+#socials {
+  grid-area: socials;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  padding: 10px 20px;
+}
+
+#dates {
+  grid-area: dates;
+}
+
+#dates li {
+  list-style: none;
+  padding-left: 15px;
+}
+footer {
+  grid-area: footer;
+}
+
+/* Media queries for bigger screens */
+@media only screen and (min-width: 1024px) {
+  .grid {
+    width: 100%;
+    grid-template-rows: 700px auto 200px 200px 50px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+      "hero hero"
+      "about-me songs"
+      "contact socials"
+      "contact dates"
+      "footer footer";
+  }
+  header .small-screen {
+    display: none;
+  }
+
+  header .big-screen {
+    display: block;
+  }
+}
