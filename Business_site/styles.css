@@ -141,7 +141,6 @@ header {
 #our-mission {
   background-color: #002a15;
   color: #fff;
-  /*height: 400px;*/
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -153,10 +152,8 @@ header {
   text-align: justify;
   max-width: 16.5rem;
   padding: 1.5rem;
-}
-
-.missions li {
-  padding: 0.5rem;
+  text-transform: uppercase;
+  line-height: 1.5rem;
 }
 
 #our-team {
