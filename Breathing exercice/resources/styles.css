@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: rgb(159, 254, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(159, 254, 210, 1) 0%,
+    rgba(73, 230, 190, 1) 35%
+  );
+  color: rgb(3, 105, 75);
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  border: 2px solid aquamarine;
+  border-radius: 30px;
+  margin: 3rem auto 1rem auto;
+  display: flex;
+  align-items: end;
+}
+
+.ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  margin: 0 auto;
+}
+
+.instructions {
+  padding: 1.5rem;
+}
+.word1 {
+  opacity: 0;
+}
+.word2 {
+  opacity: 0;
+  animation-delay: 5s;
+}
+
+button {
+  border: none;
+  background-color: aquamarine;
+  color: rgb(3, 105, 75);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+}
+
+button i {
+  vertical-align: sub;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.no-display {
+  display: none;
+}
+
+/* Animations */
+.animation {
+  animation-name: coherenceBreathing;
+  animation-iteration-count: 60;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-play-state: paused;
+}
+
+.wordsAnimation {
+  animation-name: wordAppears;
+  animation-duration: 10s;
+  animation-iteration-count: 30;
+  animation-play-state: paused;
+}
+
+.played {
+  animation-play-state: running;
+}
+
+@keyframes coherenceBreathing {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -250px);
+  }
+}
+
+@keyframes wordAppears {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

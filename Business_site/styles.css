@@ -10,7 +10,7 @@ html {
 body {
   font-family: "Unna", serif;
   text-align: center;
-  background-image: url(./images/montagne_plus_petit.jpg);
+  background-image: url(./images/mads-schmidt-rasmussen-xfngap_DToE-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -102,7 +102,7 @@ header {
 }
 
 #our-offers {
-  background-color: #e7ece9;
+  /*background-color: #e7ece9;*/
   color: black;
   padding-top: 60px;
 }
