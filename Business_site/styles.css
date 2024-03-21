@@ -86,10 +86,10 @@ header {
 
 .name {
   color: black;
-  height: 22rem;
+  height: auto;
   position: relative;
   top: 4.5rem;
-  padding: 2.2rem;
+  padding: 3rem 2rem 10rem 2rem;
 }
 
 .name h1 {
@@ -232,20 +232,20 @@ footer {
 }
 
 /* Media queries */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
   html {
     font-size: 16px;
+  }
+  .staff {
+    display: block;
+    height: auto;
+    width: 250px;
+    margin: 1rem auto;
   }
 }
 
 @media only screen and (max-width: 375px) {
   html {
     font-size: 14px;
-  }
-  .staff {
-    width: auto;
-  }
-  .staff img {
-    height: 30%;
   }
 }
