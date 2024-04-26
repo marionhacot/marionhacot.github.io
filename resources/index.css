@@ -91,13 +91,6 @@ body {
   border-radius: 50%;
   margin: 0 auto;
 }
-/*hr {
-  border: none;
-  border-bottom: 2px solid #830051;
-  clear: both;
-  width: 100%;
-  margin: 30px 10px;
-}*/
 
 #projects {
   padding: 50px 10px;
@@ -163,6 +156,11 @@ body {
   margin: 0 auto;
 }
 
+#about i {
+  margin: 10px;
+  color: #830051;
+}
+
 footer {
   background-color: #620b40;
   color: white;
@@ -209,5 +207,4 @@ button:hover {
   #about p {
     width: 70%;
   }
-  /*add to change nav items into symbols*/
 }
