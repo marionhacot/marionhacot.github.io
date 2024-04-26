@@ -199,6 +199,7 @@ body {
   padding: 5px;
   font-style: normal;
   border: 1px solid white;
+  border-radius: 5px;
 }
 .project-box a {
   color: white;
@@ -250,8 +251,8 @@ button {
   background-color: #830051;
   color: white;
   font-weight: bold;
-  padding: 15px 15px;
-  border-radius: 25px;
+  padding: 10px 10px;
+  border-radius: 15px;
   font-family: "Merriweather", serif;
   font-style: normal;
   font-size: 1.25rem;
@@ -260,13 +261,18 @@ button {
 }
 
 button:hover {
-  opacity: 0.75;
   cursor: pointer;
+  background-color: #fff;
 }
 
 #contact a {
   color: white;
   padding: 10px;
+}
+
+#contact a:hover {
+  color: #830051;
+  text-decoration: none;
 }
 
 .links {
