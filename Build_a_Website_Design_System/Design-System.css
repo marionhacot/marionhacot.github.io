@@ -100,10 +100,10 @@ a {
   text-decoration: none;
   color: black;
 }
-a:hover {
+/* a:hover {
   cursor: pointer;
   text-decoration: underline;
-}
+} */
 
 /* Media queries */
 @media only screen and (max-width: 1024px) {

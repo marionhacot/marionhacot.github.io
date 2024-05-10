@@ -208,6 +208,7 @@ body {
   box-shadow: 8px 8px 1px #ffdd00;
   transition: all 0.2s linear;
   cursor: pointer;
+  text-decoration: none;
 }
 .project-name {
   padding: 4px;
